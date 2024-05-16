@@ -12,10 +12,22 @@
         <div class="row">
             <div class="col-md-6 mb-4 mb-md-4">
                 <div class="card p-4">
-                <form id="todoForm">
+                <form id="stdForm">
                     <div class="from-group">
-                        <label for="todoItem" class="sr-only">ToDo Item</label>
-                        <input type="text" placeholder="ToDoIteam"  class="form-control mb-4" id="todoItem">
+                        <label for="Fname" class="sr-only">Fisrt Name</label>
+                        <input type="text" placeholder="Fname"  class="form-control mb-4" id="fname" required>
+                    </div>
+                    <div class="from-group">
+                        <label for="Lname" class="sr-only">Last Name</label>
+                        <input type="text" placeholder="lname"  class="form-control mb-4" id="lname" required>
+                    </div>
+                    <div class="from-group">
+                        <label for="todoItem" class="sr-only">Email</label>
+                        <input type="text" placeholder="email"  class="form-control mb-4" id="email" required>
+                    </div>
+                    <div class="from-group">
+                        <label for="todoItem" class="sr-only">Contact</label>
+                        <input type="text" placeholder="contact"  class="form-control mb-4" id="contact" required>
                     </div>
                     <div>
                         <button type="submit" class="btn btn-outline-warning btn-block">Add Student</button>
@@ -24,9 +36,26 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <ul class="list-group" id="todoList">
-                    <li class="list-group-item">Javascript</li>
-                </ul>
+                <table class="table table-striped table-dark text-white">
+                    <thead>
+                        <tr>
+                            <th>Sr No</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stdContainer">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
